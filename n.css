@@ -388,6 +388,8 @@ nav {
 }
 
 #Team_Members .member img {
+  width: 350PX;
+  height: 500PX;
   border-radius: 2px;
   border: 1px solid rgb(111, 95, 75);
 }
@@ -398,13 +400,15 @@ nav {
 }
 
 #Team_Members .member .name h4 {
+  font-family: var(--header-font);
   color: #39393c;
   font-size: 30px;
 }
 
 #Team_Members .member .name samp {
+   font-family: var(--header-font);
   color: #78716c;
-  font-size: 25px;
+  font-size: 20px;
   padding-top: 10px;
 }
 
@@ -425,7 +429,7 @@ nav {
   padding: 30px;
 }
 
-.project_col {
+.project1 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -435,14 +439,106 @@ nav {
 
 .project_col img {
   width: 400px;
-  height: auto;
+  height: 300px;
   object-fit: cover;
+  border-radius: 5px;
+}
+
+.project_col h3 {
+  margin-top: 7px;
+  font-family: var(--header-font);
+  position: relative;
+  text-align: center;
+}
+
+.project_col a {
+  color: #555;
+}
+
+.project1 .project_col img:hover {
+  cursor: pointer;
 }
 
 @media screen and (max-width: 625px) {
   .project_col img {
+    width: 250px;
+  }
+}
+
+/* kitchen */
+.k_banner {
+  padding: 10rem 0;
+  background-image: url("assets/kb.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.kitchen_container{
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 60px;
+  padding: 30px;
+}
+
+
+.kitchen_col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.kitchen_col img {
+  width: 400px;
+  height: 250px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 725px) {
+  .kitchen_col img {
     width: 300px;
   }
+}
+
+/* badroom */
+.b_banner {
+  padding: 10rem 0;
+  background-image: url("assets/b.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* lIVING ROOM*/
+.L_banner {
+  padding: 10rem 0;
+  background-image: url("assets/L.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* WARDROW */
+.W_banner {
+  padding: 10rem 0;
+  background-image: url("assets/W.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* house */
+.A_banner {
+  padding: 10rem 0;
+  background-image: url("assets/A.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /*contact*/
@@ -536,7 +632,8 @@ button:hover {
 }
 
 @media screen and (max-width: 1023px) {
-  .container,.details{
+  .container,
+  .details {
     max-width: auto;
     margin: 40px 20px;
     padding: 20px;
