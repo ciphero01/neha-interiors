@@ -523,6 +523,15 @@ nav {
   background-repeat: no-repeat;
 }
 
+/* DINING ROOM*/
+.d_banner {
+  padding: 10rem 0;
+  background-image: url("assets/d.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 /* WARDROW */
 .W_banner {
   padding: 10rem 0;
